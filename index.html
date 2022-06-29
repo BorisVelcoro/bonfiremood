@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/ico" href="images/favicon.ico" />
-        <link rel="stylesheet" href="styles/styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
-        <title>Bonfire Mood</title>
-    </head>
 
-    <body>
-        <div class="centerContainer">
-            <div class="centerBlock">
-                <h1 class="mainHeader1">Firelink Shrine.</h1>
-                <div class="audioplayer">
-                    <button id="playbutton" class="play" onclick="playAudio();"></button>
-                    <audio id="audioplayer" loop="loop">
-                        <source src="/audio/ds1.mp3" type="audio/mpeg">
-                    </audio>
-                    <!--РАЗОБРАТЬСЯ КАК ЭТО РАБОТАЕТ. ДОБАВИТЬ ШКАЛУ ГРОМКОСТИ.-->
-                    <script>
-                        var music = document.getElementById('audioplayer');
-                        function playAudio() {
-                            if (music.paused) {
-                                music.play();
-                                playbutton.className ="";
-                                playbutton.className ="pause";
-                            } else {
-                                music.pause();
-                                playbutton.className ="";
-                                playbutton.className ="play";
-                            }}
-                    </script>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <title>Bonfire Mood</title>
+</head>
+
+<body>
+    <!--ЗДЕСЬ БУДЕТ НАВИГАЦИЯ-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">DSI</a></li>
+                <li><a href="#">DSII</a></li>
+                <li><a href="#">DSIII</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="centerContainer">
+        <div class="centerBlock">
+            <h1 class="mainHeader1">Firelink Shrine.</h1>
+            <div class="audioplayer">
+                <button id="playbutton" class="play" onclick="playAudio();"></button>
+                <audio id="audioplayer" loop="loop">
+                    <source src="/audio/ds1.mp3" type="audio/mpeg">
+                </audio>
+                <!--РАЗОБРАТЬСЯ КАК ЭТО РАБОТАЕТ. ДОБАВИТЬ ШКАЛУ ГРОМКОСТИ.-->
+                <script>
+                    var music = document.getElementById('audioplayer');
+
+                    function playAudio() {
+                        if (music.paused) {
+                            music.play();
+                            playbutton.className = "";
+                            playbutton.className = "pause";
+                        } else {
+                            music.pause();
+                            playbutton.className = "";
+                            playbutton.className = "play";
+                        }
+                    }
+                </script>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

@@ -1,5 +1,27 @@
-html, body {
+html,
+body {
   height: 100%;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+}
+nav ul {
+  font-size: 2em;
+  list-style-type: none;
+  display: flex;
+  margin-top: 1.5em 0;
+}
+nav ul a {
+  padding: 0em 5em;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
 }
 
 body {
@@ -7,12 +29,7 @@ body {
   background-image: url("../images/bonfire1.jpg");
   background-position: center;
   background-size: auto 100%;
-  background-size: cover;
   background-repeat: no-repeat;
-}
-
-.centerBlock {
-  padding-top: 10rem;
 }
 
 .centerContainer {
@@ -35,8 +52,8 @@ h1 {
 
 #playbutton {
   display: block;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   color: red;
   border: 10rem blue;
   margin: auto;
