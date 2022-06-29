@@ -16,8 +16,7 @@ body {
 }
 
 .centerContainer {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -32,4 +31,13 @@ h1 {
   text-align: center;
   text-decoration: underline;
   text-decoration-thickness: 0.15rem;
+}
+
+#playbutton {
+  display: block;
+  height: 100px;
+  width: 100px;
+  color: red;
+  border: 10rem blue;
+  margin: auto;
 }/*# sourceMappingURL=styles.css.map */

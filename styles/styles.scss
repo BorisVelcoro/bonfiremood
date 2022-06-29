@@ -15,8 +15,7 @@ body {
 }
 
 .centerContainer {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     width: 100%;
     height: 100%;
 }
@@ -32,3 +31,12 @@ h1 {
     text-decoration: underline;
     text-decoration-thickness: 0.15rem;
 }    
+// почему кнопка не красная с синей границей?
+#playbutton {
+    display: block;
+    height: 100px;
+    width: 100px;
+    color: red;
+    border: 10rem blue;
+    margin: auto;
+}
