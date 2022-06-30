@@ -39,13 +39,17 @@ header {
                 margin-right: auto;
             }
 
-        }
+            a {
+                list-style-type: none;
+                font-size: 2rem;
+                text-decoration: none;
+                color: white;
+            }
 
-        a {
-            list-style-type: none;
-            font-size: 2rem;
-            text-decoration: none;
-            color: white;
+            //ВМЕСТО ФОНА СДЕЛАТЬ ВСПЛЫВАЮЩИЕ СООТВЕТСТВУЮЩИЕ КАРТИНКИ
+            a:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
         }
     }
 }
@@ -73,7 +77,7 @@ h1 {
     display: block;
     font-family: 'EB Garamond', serif;
     font-weight: 500;
-    font-size: 5.5em;
+    font-size: 5.5rem;
     color: white;
     text-align: center;
     text-decoration: underline;
@@ -89,4 +93,21 @@ h1 {
     border: 10rem blue;
     margin: auto;
     cursor: pointer;
+}
+
+// НАДПИСЬ FIRELINK SHRINE ПРЫГАЕТ ВВЕРХ. ПОСМОТРЕТЬ КАК ЭТО МОЖНО УБРАТЬ?
+@media only screen and (max-width: 600px) {
+    header {
+        nav {
+            ul {
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
 }

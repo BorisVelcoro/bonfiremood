@@ -36,11 +36,14 @@ header nav ul .navitem:first-child {
 header nav ul .navitem:nth-child(2) {
   margin-right: auto;
 }
-header nav a {
+header nav ul a {
   list-style-type: none;
   font-size: 2rem;
   text-decoration: none;
   color: white;
+}
+header nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -65,7 +68,7 @@ h1 {
   display: block;
   font-family: "EB Garamond", serif;
   font-weight: 500;
-  font-size: 5.5em;
+  font-size: 5.5rem;
   color: white;
   text-align: center;
   text-decoration: underline;
@@ -80,4 +83,14 @@ h1 {
   border: 10rem blue;
   margin: auto;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav ul a {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
