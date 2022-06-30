@@ -10,6 +10,7 @@ html {
 
 header {
   margin-top: 0;
+  padding-top: 2rem;
 }
 header nav {
   width: 100%;
@@ -26,9 +27,11 @@ header nav ul {
 }
 header nav ul li {
   overflow: hidden;
+  margin-right: 4rem;
 }
 header nav ul .navitem:first-child {
   margin-right: auto;
+  margin-left: 4rem;
 }
 header nav ul .navitem:nth-child(2) {
   margin-right: auto;
@@ -54,7 +57,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 9rem 0 0 0;
 }
 
 h1 {
