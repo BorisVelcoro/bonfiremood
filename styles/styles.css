@@ -15,20 +15,27 @@ header {
 header nav {
   width: 100%;
   height: 100%;
+  margin: auto;
   background: none;
   font-family: "EB Garamond", serif;
   font-weight: 500;
 }
 header nav ul {
-  font-size: 2em;
-  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 header nav ul li {
-  float: left;
+  overflow: hidden;
 }
-header nav ul a {
-  display: block;
-  padding: 0em 5em;
+header nav ul .navitem:first-child {
+  margin-right: auto;
+}
+header nav ul .navitem:nth-child(2) {
+  margin-right: auto;
+}
+header nav a {
+  list-style-type: none;
   font-size: 2rem;
   text-decoration: none;
   color: white;
@@ -70,4 +77,5 @@ h1 {
   color: red;
   border: 10rem blue;
   margin: auto;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

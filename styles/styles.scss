@@ -15,24 +15,35 @@ header {
     nav {
         width: 100%;
         height: 100%;
+        margin: auto;
         background: none;
         font-family: 'EB Garamond', serif;
         font-weight: 500;
 
         ul {
-            font-size: 2em;
-            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
 
             li {
-                float: left;
+                overflow: hidden;
             }
-            a { 
-                display: block;
-                padding: 0em 5em;
-                font-size: 2rem;
-                text-decoration: none;
-                color: white;
+
+            .navitem:first-child {
+                margin-right: auto;
             }
+
+            .navitem:nth-child(2) {
+                margin-right: auto;              
+            }
+
+        }
+
+        a {
+            list-style-type: none;
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
         }
     }
 }
@@ -79,4 +90,5 @@ h1 {
     color: red;
     border: 10rem blue;
     margin: auto;
+    cursor: pointer;
 }
