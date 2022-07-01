@@ -39,7 +39,10 @@ header nav ul .navitem:first-child {
   margin-left: 4rem;
 }
 header nav ul .navitem:nth-child(2) {
-  margin-right: auto;
+  margin: auto;
+}
+header nav ul .navitem:last-child {
+  margin-left: auto;
 }
 header nav ul a {
   list-style-type: none;

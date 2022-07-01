@@ -36,9 +36,12 @@ header {
             }
 
             .navitem:nth-child(2) {
-                margin-right: auto;
+                margin: auto;
             }
 
+            .navitem:last-child {
+                margin-left: auto;
+            }
             a {
                 list-style-type: none;
                 font-size: 2rem;
