@@ -22,31 +22,28 @@
             </ul>
         </nav>
     </header>
-    <div class="centerContainer">
-        <div class="centerBlock">
-            <h1 class="mainHeader1">Firelink Shrine</h1>
-            <div class="audioplayer">
-                <button id="playbutton" class="play" onclick="playAudio();"></button>
-                <audio id="audioplayer" loop="loop">
-                    <source src="/audio/ds1.mp3" type="audio/mpeg">
-                </audio>
-                <!--РАЗОБРАТЬСЯ КАК ЭТО РАБОТАЕТ. ДОБАВИТЬ ШКАЛУ ГРОМКОСТИ.-->
-                <script>
-                    var music = document.getElementById('audioplayer');
-
-                    function playAudio() {
-                        if (music.paused) {
-                            music.play();
-                            playbutton.className = "";
-                            playbutton.className = "pause";
-                        } else {
-                            music.pause();
-                            playbutton.className = "";
-                            playbutton.className = "play";
-                        }
+    <div class="centercontainer">
+        <h1 class="mainHeader1">Firelink Shrine</h1>
+        <div class="audioplayer">
+            <button id="playbutton" class="play" onclick="playAudio();"></button>
+            <audio id="audioplayer" loop="loop">
+                <source src="/audio/ds1.mp3" type="audio/mpeg">
+            </audio>
+            <!--РАЗОБРАТЬСЯ КАК ЭТО РАБОТАЕТ. ДОБАВИТЬ ШКАЛУ ГРОМКОСТИ.-->
+            <script>
+                var music = document.getElementById('audioplayer');
+                function playAudio() {
+                    if (music.paused) {
+                        music.play();
+                        playbutton.className = "";
+                        playbutton.className = "pause";
+                    } else {
+                        music.pause();
+                        playbutton.className = "";
+                        playbutton.className = "play";
                     }
-                </script>
-            </div>
+                }
+            </script>
         </div>
     </div>
 </body>
