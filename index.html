@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/ico" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Bonfire Mood</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li class="navitem"><a href="#">DSI</a></li>
-                <li class="navitem"><a href="#">DSII</a></li>
-                <li class="navitem"><a href="#">DSIII</a></li>
-            </ul>
-        </nav>
-    <div class="center-container">
-        <h1 class="main-header"><span class="header1">Firelink Shrine</span></h1>
+      <nav>
+        <ul>
+          <li class="navitem"><a href="#">DSI</a></li>
+          <li class="navitem"><a href="#">DSII</a></li>
+          <li class="navitem"><a href="#">DSIII</a></li>
+        </ul>
+      </nav>
+      <div class="center-container">
+        <h1 class="main-header">
+          <span class="header1">Firelink Shrine</span>
+        </h1>
         <div class="audio-player">
-            <button id="playbutton" class="play" onclick="playAudio();"></button>
-            <audio id="audioplayer" loop="loop">
-                <source src="/audio/ds1.mp3" type="audio/mpeg">
-            </audio>
-            <!--РАЗОБРАТЬСЯ КАК ЭТО РАБОТАЕТ. ДОБАВИТЬ ШКАЛУ ГРОМКОСТИ.-->
-            <script>
-                var music = document.getElementById('audio-player');
-                function playAudio() {
-                    if (music.paused) {
-                        music.play();
-                        playbutton.className = "";
-                        playbutton.className = "pause";
-                    } else {
-                        music.pause();
-                        playbutton.className = "";
-                        playbutton.className = "play";
-                    }
-                }
-            </script>
+          <button id="playbutton" class="play" onclick="playAudio();"></button>
+          <audio id="audio-player" loop="loop">
+            <source src="/audio/ds1.mp3" type="audio/mpeg" />
+          </audio>
+          <!--РАЗОБРАТЬСЯ КАК ЭТО РАБОТАЕТ. ДОБАВИТЬ ШКАЛУ ГРОМКОСТИ.-->
+          <script>
+            var music = document.getElementById("audio-player");
+            function playAudio() {
+              if (music.paused) {
+                music.play();
+                playbutton.className = "";
+                playbutton.className = "pause";
+              } else {
+                music.pause();
+                playbutton.className = "";
+                playbutton.className = "play";
+              }
+            }
+          </script>
         </div>
-    </div>
+      </div>
     </header>
-</body>
-
+  </body>
 </html>
